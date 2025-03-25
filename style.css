@@ -213,8 +213,10 @@ header{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.animate__animated {
+.Nuespeci{
     margin: 0px;
+    animation: zoomIn;
+    animation-duration: 2s;
 }
 
 @media (max-width: 768px) {
