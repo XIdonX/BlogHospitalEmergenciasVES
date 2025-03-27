@@ -1,3 +1,5 @@
+/*Introducción*/
+
 .contenedor-portada {
     display: flex;
     align-items: center;
@@ -7,6 +9,7 @@
     padding: 2%;
     background-color: #efe7cbbf;
     border-radius: 10px;
+    /* background-color: #e8cca0a8; */
 }
 
 .div-info {
@@ -28,10 +31,11 @@
 .portada {
     width: 100%;
     height: 380px;
-    background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.4),rgb(47, 197, 255,0.3),rgb(0, 139, 208,0.7)), url(../../img/farmacia.jpg);
+    background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.3),rgb(47, 197, 255,0.3),rgb(0, 139, 208,0.7)), url(../../img/grupohospital.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 5px;
+    /* background-blend-mode:multiply; */
     animation: zoomIn;
     animation-duration: 2s;
 }
@@ -67,10 +71,13 @@
     }
 }
 
-.contenedor-esadt{
+/*Contenedor ESUCI*/
+
+
+.contenedor-otros{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 30px;
     justify-content: space-evenly;
     margin: 30px 35px 80px 35px;
 
@@ -79,20 +86,16 @@
     font-size: 17px;
 }
 
-.seccion-esadt{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    justify-content: space-evenly;
-}
-
-.contenedor-esadt p{
-    padding: 3px 5px 3px 5px;
+.contenedor-otros p{
+    padding: 2px 5px 5px 5px;
     margin: 20px 3px 0px 3px;
 }
 
-.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete,.ocho,
-.nueve, .diez, .once, .doce, .trece{
+.cuatro p{
+    margin: 10px 3px 0px 3px;
+}
+
+.uno, .dos, .tres, .cuatro{
     width: 17rem;
     height: 4rem;
     padding: 5px;
@@ -104,14 +107,14 @@
     interpolate-size: allow-keywords;
 }
 
-.uno:hover, .dos:hover, .tres:hover, .cuatro:hover, .cinco:hover, .seis:hover, .siete:hover,.ocho:hover,
-.nueve:hover, .diez:hover, .once:hover, .doce:hover, .trece:hover{
-    height: 11rem;
+.uno:hover, .dos:hover, .tres:hover, .cuatro:hover{
+    height: 12.5rem;
     background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.7),rgb(47, 197, 255,0.7),rgb(0, 139, 208,0.9)), url(../../img/oso.png);
     background-size: cover;
     background-position: center;
     color: #00223E;
 }
+
 
 .descripcion{
     font-size: 15px;
