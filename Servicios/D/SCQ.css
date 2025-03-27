@@ -91,22 +91,22 @@ body{
     font-size: 17px;
 }
 
-.uno p{
+.uno p, .dos p{
     padding: 2px 5px 5px 5px;
     margin: 20px 3px 0px 3px;
 }
 
-.dos p, .tres p{
+.tres p{
     padding: 2px 5px 5px 5px;
     margin: 10px 3px 0px 3px;
 }
 
-.dos p:hover, .tres p:hover{
+.tres p:hover{
     margin: 20px 3px 0px 3px;
 }
 
 .uno, .dos, .tres{
-    width: 15rem;
+    width: 17rem;
     height: 4rem;
     padding: 5px;
     text-align: center;

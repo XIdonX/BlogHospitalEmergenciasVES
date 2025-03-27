@@ -100,7 +100,7 @@ body{
     margin: 20px 3px 0px 3px;
 }
 
-.cuatro p, .doce p, .treintauno p{
+/* .cuatro p, .doce p, .treintauno p{
     padding: 2px 5px 2px 5px;
     margin: 10px 3px 0px 3px;
 }
@@ -108,7 +108,7 @@ body{
 .cuatro p:hover , .doce p:hover, .treintauno p:hover{
     padding: 2px 5px 2px 5px;
     margin: 20px 3px 0px 3px;
-}
+} */
 
 
 .uno, .dos, .tres, .cuatro, .cinco, .seis, .siete,.ocho,
@@ -117,7 +117,7 @@ body{
 .veintitres, .veinticuatro, .veinticinco, .veintiseis, .veintisiete,
 .veintiocho, .veintinueve, .treinta, .treintauno, .treintados,
 .treintatres, .treintacuatro{
-    width: 12rem;
+    width: 17rem;
     height: 3.8rem;
     padding: 5px;
     text-align: center;
