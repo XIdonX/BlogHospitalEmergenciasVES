@@ -1,8 +1,3 @@
-body{
-    background-color: #f2f2f2; /* Color de fondo del body */
-    margin: 0px;
-}
-
 /*Introducción*/
 
 .contenedor-portada {
@@ -14,7 +9,6 @@ body{
     padding: 2%;
     background-color: #efe7cbbf;
     border-radius: 10px;
-    /* background-color: #e8cca0a8; */
 }
 
 .div-info {
@@ -36,11 +30,10 @@ body{
 .portada {
     width: 100%;
     height: 380px;
-    background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.3),rgb(47, 197, 255,0.3),rgb(0, 139, 208,0.7)), url(../../img/cirugia.jpg);
+    background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.3),rgb(47, 197, 255,0.3),rgb(0, 139, 208,0.7)), url(../../img/cuidadosespeciales.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 5px;
-    /* background-blend-mode:multiply; */
     animation: zoomIn;
     animation-duration: 2s;
 }
@@ -76,13 +69,10 @@ body{
     }
 }
 
-/*Contenedor SCQ*/
-
-
-.contenedor-scq{
+.contenedor-sh{
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     justify-content: space-evenly;
     margin: 30px 35px 80px 35px;
 
@@ -91,21 +81,28 @@ body{
     font-size: 17px;
 }
 
-.uno p{
-    padding: 2px 5px 5px 5px;
+.seccion-sh{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.contenedor-sh p{
+    padding: 3px 5px 3px 5px;
     margin: 20px 3px 0px 3px;
 }
 
-.dos p, .tres p{
-    padding: 2px 5px 5px 5px;
+.cuatro p, .seis p, .siete p, .ocho p {
     margin: 10px 3px 0px 3px;
 }
 
-.dos p:hover, .tres p:hover{
+.cuatro p:hover , .seis p:hover, .siete p:hover, .ocho p:hover{ 
     margin: 20px 3px 0px 3px;
 }
 
-.uno, .dos, .tres{
+.uno, .dos, .tres, .cuatro, .cinco, .seis, .siete,.ocho,
+.nueve, .diez, .once, .doce, .trece{
     width: 15rem;
     height: 4rem;
     padding: 5px;
@@ -117,20 +114,13 @@ body{
     interpolate-size: allow-keywords;
 }
 
-.uno:hover, .dos:hover, .tres:hover{
-    height: 12.5rem;
+.uno:hover, .dos:hover, .tres:hover, .cuatro:hover, .cinco:hover, .seis:hover, .siete:hover,.ocho:hover,
+.nueve:hover, .diez:hover, .once:hover, .doce:hover, .trece:hover{
+    height: 13rem;
     background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.7),rgb(47, 197, 255,0.7),rgb(0, 139, 208,0.9)), url(../../img/oso.png);
     background-size: cover;
     background-position: center;
     color: #00223E;
-}
-
-.dos:hover{
-    height: 13rem;
-}
-
-.tres:hover{
-    height: 14rem;
 }
 
 .descripcion{
