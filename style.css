@@ -153,10 +153,11 @@ header{
     flex-wrap: wrap;
     gap: 2.5rem;
     justify-content:center;
-    margin: 1%;
+    margin: 2.5% 2.5% 3.5% 2.5%;
     padding: 30px 30px 10px 30px;
     height: auto;
     width: auto;
+    background-color: #efe7cbbf;
 }
 
 .video{
@@ -193,7 +194,7 @@ header{
 
 .parrafo{
     font-size: 16px;
-    color: #06314b;
+    color: #115884;
     font-family: Arial, Helvetica, sans-serif;
     text-align: justify;
     padding: 0px 10px 0px 10px;
@@ -205,7 +206,7 @@ header{
 }
 
 .seccion{
-    margin: 2% 20% 2% 20%;
+    margin: 4% 20% 2.5% 20%;
     font-size: 35px;
     font-weight: bold;
     text-align: center;
@@ -227,6 +228,17 @@ header{
     .nombre-father {
         margin: 20px; 
     }
+}
+
+/*Info de especialidades*/
+
+.intro-especialidades{
+    font-size: 16px;
+    text-align: justify;
+    color: #115884;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 30px 10% 30px 10%;
+    padding: 10px 25px 10px 25px;
 }
 
 /*Contenedor*/
@@ -550,7 +562,7 @@ a:hover{
     font-family: Arial, Helvetica, sans-serif;
     /* color: #e8cca0; */
     color: #06314b;
-    /* font-weight: bold; */
+    font-weight: bold;
     font-size: 16px;
 }
 
@@ -685,7 +697,8 @@ a:hover{
 
 .linkedin:hover, .youtube:hover, .instagram:hover, .tiktok:hover, .facebook:hover{
     transform: scale(1.1);
-    background-color: #e8cca0;
+    /* background-color: #e8cca0; */
+    background-color: #efe7cb;
 }
 
 .bxl--linkedin-square {
