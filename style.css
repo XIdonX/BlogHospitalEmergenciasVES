@@ -533,14 +533,14 @@ footer{
     margin: 10px 0px 10px 0px;
 }
 
-a:active{
+.dib a:active , .dibone a:active, .dibtwo a:active{
     color: #06314b;
 }
-a:visited{
+.dib a:visited , .dibone a:visited, .dibtwo a:visited{
     color: #06314b;
 }
 
-a:hover{
+.dib a:hover, .dibone a:hover, .dibtwo a:hover{
     color: #e8cca0;
 }
 
