@@ -1,0 +1,86 @@
+/*Informacion.html*/
+
+.imagen{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    margin: 0px; 
+    opacity: 70%;
+    background: linear-gradient(to bottom, rgb(119, 215, 255,0.3),rgba(34, 180, 238, 0.4),rgb(0, 139, 208,0.8)), url(../img/hospitalHEVES.png);
+    /* background-blend-mode: multiply; */
+    background-size: cover;
+    background-position: center;
+}
+
+.Que-hacemos-father {
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+    padding: 30px;
+    width: 55%;
+    text-align: justify;
+}
+
+.proposito, .vision, .mision, .valores, .reseña {
+    font-size: 30px;
+    font-weight: bold;
+    color: #c99d58;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+
+    animation: zoomIn;
+    animation-duration: 1.5s;
+}
+
+p, li{
+    font-size: 15px;
+    color: #115884;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li::marker {
+    color: #06314b; /* Cambia el color del punto a rojo */
+}
+
+a:link {
+    color: #06314b;
+}
+a:visited {
+    color: #06314b;
+}
+
+.valor::before {
+    content: "Compromiso. ";
+    font-weight: bold;
+    text-align: initial;
+    color: #06314b;
+}
+
+.valor-one::before {
+    content: "Integridad. ";
+    font-weight: bold;
+    text-align: initial;
+    color: #06314b;
+}
+
+.valor-two::before {
+    content: "Humanización. ";
+    font-weight: bold;
+    text-align: initial;
+    color: #06314b;
+}
+
+.valor-three::before {
+    content: "Trabajo en equipo. ";
+    font-weight: bold;
+    text-align: initial;
+    color: #06314b;
+}   
+
+.concatenar-text::before {
+    content: "Este centro hospitalario se inauguró el 7 de abril del 2016";
+    font-weight: bold;
+    text-align: initial;
+    color: #115884;
+    font-style: oblique;
+}
