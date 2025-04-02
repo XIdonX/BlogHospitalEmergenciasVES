@@ -9,6 +9,9 @@
     /* margin: 2.7rem 2rem 2rem 2rem;
     padding:0px; */
     border-radius: 2px;
+
+    animation: zoomIn;
+    animation-duration: 1.5s;
 }
 
 .div-father{
@@ -44,11 +47,29 @@
     }
     .imagen-contenedor {
         width: 100%;
+        height: 14.8rem;
     }
     .normas-imagen{
         width: 90%;
         display: flex;
         gap: 1rem;
+    }
+    .norma-father{
+        width: 100% !important;
+        margin: 0rem !important;
+        height: 11rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .normas-imagen{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .imagen-contenedor {
+        width: 100%;
+        height: 20rem;
     }
 }
 
@@ -135,7 +156,7 @@ ul li::marker {
     padding: 30px;
     /* width: 70%; */
     width: 20rem;
-    height: auto;
+    height: 11rem;
     /* background-color: #efe7cb; */
     background-color: #f4ebcfc6;
     border-radius: 10px;
