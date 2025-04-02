@@ -1,24 +1,63 @@
 /*Informacion.html*/
 
-.imagen{
-    width: 100%;
+.imagen-contenedor {
+    width: 23.8rem;
     height: 25rem;
-    object-fit: cover;
-    margin: 0px; 
-    opacity: 70%;
-    background: linear-gradient(to bottom, rgb(119, 215, 255,0.3),rgba(34, 180, 238, 0.4),rgb(0, 139, 208,0.8)), url(../img/hospitalHEVES.png);
-    /* background-blend-mode: multiply; */
+    background: linear-gradient(to bottom, rgb(119, 215, 255,0.3),rgba(34, 180, 238, 0.4),rgb(0, 139, 208,0.8)), url(../img/osoydoctor.jpg);
     background-size: cover;
     background-position: center;
+    /* margin: 2.7rem 2rem 2rem 2rem;
+    padding:0px; */
+    border-radius: 2px;
+}
+
+.div-father{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+    margin: 1rem 1rem 2rem 1rem;
+}
+
+.normas-imagen{
+    display: inline-block;
+    margin: 20px;
+    padding: 0px;
 }
 
 .Que-hacemos-father {
     justify-content: center;
     align-items: center;
-    margin: 2rem;
-    padding: 30px;
-    width: 55%;
+    margin: 1rem 2rem 2rem 2rem;
+    padding: 30px 30px 0px 30px;
+    width: 45rem;
+    /* width: 60%; */
     text-align: justify;
+    background-color: #ffffff7d;
+    border-radius: 10px;
+}
+
+@media (max-width: 1305px) {
+    .Que-hacemos-father {
+        width: 100%;
+        margin: 1rem 2rem 0rem 2rem;
+    }
+    .imagen-contenedor {
+        width: 100%;
+    }
+    .normas-imagen{
+        width: 90%;
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.link-referen{
+    color: #06314b;
+}
+
+.link-referen:hover{
+    color: #c99d58;
 }
 
 .proposito, .vision, .mision, .valores, .reseña {
@@ -40,13 +79,6 @@ p, li{
 
 ul li::marker {
     color: #06314b; /* Cambia el color del punto a rojo */
-}
-
-a:link {
-    color: #06314b;
-}
-a:visited {
-    color: #06314b;
 }
 
 .valor::before {
@@ -83,4 +115,36 @@ a:visited {
     text-align: initial;
     color: #115884;
     font-style: oblique;
+}
+
+.norma-name{
+    font-size: 20px;
+    font-weight: bold;
+    color: #06314b;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+
+    animation: zoomIn;
+    animation-duration: 1.5s;
+}
+
+.norma-father{
+    justify-content: center;
+    align-items: center;
+    /* margin: 2.7rem 2rem 2rem 2rem; */
+    padding: 30px;
+    /* width: 70%; */
+    width: 20rem;
+    height: auto;
+    /* background-color: #efe7cb; */
+    background-color: #f4ebcfc6;
+    border-radius: 10px;
+    margin: 2rem 0rem 0rem 0rem;
+}
+
+.norma-enlace{
+    font-size: 15px;
+    color: #115884;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 0px 20px 0px;
 }

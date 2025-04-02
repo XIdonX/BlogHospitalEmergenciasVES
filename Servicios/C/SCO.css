@@ -130,6 +130,13 @@
     /* color: #420056EB; */
     color: white;
     text-shadow: #884C9D 0px 0px 5px;
+    transition: 1s;
+}
+
+@media (max-width: 768px) {
+    .uno, .dos{
+        width: 50%; /* Ambos elementos ocupan todo el ancho en pantallas pequeñas */
+    }
 }
 
 .dos:hover{
