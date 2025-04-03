@@ -57,19 +57,32 @@
     .norma-father{
         width: 100% !important;
         margin: 0rem !important;
-        height: 11rem !important;
+        height: 11.5rem !important;
+    }
+    .link-nav-container{
+        width: 100% !important;
+        height: 11.5rem !important;
     }
 }
 
 @media (max-width: 768px) {
     .normas-imagen{
-        width: 100%;
+        width: 80%;
         display: flex;
         flex-wrap: wrap;
+        height: auto;
     }
     .imagen-contenedor {
         width: 100%;
         height: 20rem;
+    }
+    .link-nav-container{
+        width: 85% !important;
+        height: auto !important;
+    }
+    .norma-father{
+        width: 85% !important;
+        height: auto !important;
     }
 }
 
@@ -96,6 +109,7 @@ p, li{
     font-size: 15px;
     color: #115884;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 10px 0px;
 }
 
 ul li::marker {
@@ -144,6 +158,8 @@ ul li::marker {
     color: #06314b;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    border-bottom: 1px solid #06314b;
+    padding-bottom: 10px;
 
     animation: zoomIn;
     animation-duration: 1.5s;
@@ -156,9 +172,10 @@ ul li::marker {
     padding: 30px;
     /* width: 70%; */
     width: 20rem;
-    height: 11rem;
+    height: 11.5rem;
     /* background-color: #efe7cb; */
-    background-color: #f4ebcfc6;
+    /* background-color: #f4ebcfc6; */
+    background-color: #f5ca84b3;
     border-radius: 10px;
     margin: 2rem 0rem 0rem 0rem;
 }
@@ -168,4 +185,183 @@ ul li::marker {
     color: #115884;
     font-family: Arial, Helvetica, sans-serif;
     padding: 20px 0px 20px 0px;
+}
+
+/*Organizacion.html*/
+
+.Organizacion-container{
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem 1rem 2rem;
+    padding: 30px 30px 0px 30px;
+    width: 45rem;
+    /* width: 60%; */
+    text-align: justify;
+    background-color: #ffffff7d;
+    border-radius: 10px;
+}
+
+.Organizacion{
+    font-size: 30px;
+    font-weight: bold;
+    color: #c99d58;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+    animation: zoomIn;
+    animation-duration: 1.5s;
+
+}
+
+.negrita{
+    font-size: 17px;
+    font-weight: bold;
+    color: #c99d58;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+
+    animation: zoomIn;
+    animation-duration: 1.5s;
+}
+
+.ud-eco::before {
+    content: "Unidad de Economía. ";
+    font-weight: bold;
+    font-style: oblique;
+    color: #06314b;
+}
+
+.ud-log::before {
+    content: "Unidad de Logística. ";
+    font-weight: bold;
+    font-style: oblique;
+    color: #06314b;
+}
+
+.ud-ig-h-s::before {
+    content: "Unidad de Ingeniería Clínica, Hospitalaria y Servicios. ";
+    font-weight: bold;
+    font-style: oblique;
+    color: #06314b;
+}
+
+.ud-seg::before {
+    content: "Unidad de Seguros. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+
+.ud-ADeI::before {
+    content: "Unidad de Apoyo a la Docencia e Investigación. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+
+.ser-AyOU::before {
+    content: "Servicio de Atención y Orientación al Usuario. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-RC::before {
+    content: "Servicio de Referencia y Contrarreferencia. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+
+.ser-AA::before {
+    content: "Servicio de Atención Ambulatoria. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-H-CQ::before {
+    content: "Servicio de Hospitalización - Clínica Quirúrgica. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-E::before {
+    content: "Servicio de Emergencia.  ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-CC::before {
+    content: "Servicio de Cuidados Críticos. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-AyCQ::before {
+    content: "Servido de Anestesiología y Centro Quirúrgico. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-ADyBS::before {
+    content: "Servicio de Apoyo al Diagnóstico y Banco de Sangre. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+.ser-AT::before {
+    content: "Servicio de Apoyo al Tratamiento. ";
+    font-weight: bold;
+   font-style: oblique;
+    color: #06314b;
+}
+
+
+.link-nav-container{
+    width: 20rem;
+    height: 11rem;
+    background-color: #ffffff7d;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    margin:0rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.link-nav-container a{
+    font-size: 15px;
+    color: #c99d58;
+    font-weight: bold;
+    padding: 0px 30px 0px 0px;
+}
+
+.siguiente{
+    padding: 5px 0px 0px 0px;
+    display: flex;
+    gap: 4.3rem;
+}
+.siguiente-one{
+    padding: 5px 0px 0px 0px;
+    display: flex;
+    gap: 10rem;
+}
+
+.siguiente-two{
+    padding: 5px 0px 10px 0px;
+    display: flex;
+    gap: 5.9rem;
+ }
+
+.secciones-recom{
+    font-size: 20px;
+    font-weight: bold;
+    color: #06314b;
+    margin: 0px 0px 5px 0px;
+    border-bottom: 1px solid #06314b;
+    padding-bottom: 10px;
+
+    animation: zoomIn;
+    animation-duration: 1.5s;
 }
