@@ -308,7 +308,8 @@ header{
 }
 
 .seccion1:hover,.seccion2:hover, .seccion3:hover, .seccion4:hover, .seccion5:hover, .seccion6:hover, .seccion7:hover, .seccion8:hover {
-    transform: scale(1.1);
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .seccion2 {
