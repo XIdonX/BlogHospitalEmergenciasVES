@@ -8,7 +8,7 @@
     background-position: center;
     /* margin: 2.7rem 2rem 2rem 2rem;
     padding:0px; */
-    border-radius: 2px;
+    border-radius: 8px;
 
     animation: zoomIn;
     animation-duration: 1.5s;
@@ -47,7 +47,7 @@
     }
     .imagen-contenedor {
         width: 100%;
-        height: 14.8rem;
+        height: 15.3rem;
     }
     .normas-imagen{
         width: 90%;
@@ -57,7 +57,7 @@
     .norma-father{
         width: 100% !important;
         margin: 0rem !important;
-        height: 11.5rem !important;
+        height: auto !important;
     }
     .link-nav-container{
         width: 100% !important;
@@ -169,7 +169,7 @@ ul li::marker {
     justify-content: center;
     align-items: center;
     /* margin: 2.7rem 2rem 2rem 2rem; */
-    padding: 30px;
+    padding: 30px 30px 30px 30px;
     /* width: 70%; */
     width: 20rem;
     height: 11.5rem;
@@ -184,7 +184,12 @@ ul li::marker {
     font-size: 15px;
     color: #115884;
     font-family: Arial, Helvetica, sans-serif;
-    padding: 20px 0px 20px 0px;
+    padding: 0px;
+}
+
+.norma-enlace-container{
+    margin: 10px 0px 5px 0px;
+    padding: 10px 0px 5px 0px;
 }
 
 /*Organizacion.html*/
