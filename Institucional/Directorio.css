@@ -1,0 +1,194 @@
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #c99d58;
+    margin: 1.5rem 0px 1rem 5%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    animation: zoomIn 2s;
+}
+
+#searchInput{
+    width: 15rem;
+    height: 1rem;
+    border-radius: 10px;
+    padding: 0.5rem;
+    margin: 0.5rem 0px 0.5rem 5%;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4ebcf62;
+    color: #c99d58;
+    border: 1px solid #c99d58;
+    box-shadow: 0 0 2px #c99d58;
+    transition: box-shadow 0.5s ease;
+}
+
+#searchInput:focus {
+    background: #77d8ff7b;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    border-color: #115884;
+    box-shadow: 0 0 2px #115884;
+}
+
+.phone-icon {
+    display: inline-block;
+    padding-top: 5px;
+    width: 1.2em;
+    height: 1.2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23000' d='M13.24 21.58c2.88 5.66 7.52 10.28 13.18 13.18l4.4-4.4c.54-.54 1.34-.72 2.04-.48c2.24.74 4.66 1.14 7.14 1.14c1.1 0 2 .9 2 2V40c0 1.1-.9 2-2 2C21.22 42 6 26.78 6 8c0-1.1.9-2 2-2h7c1.1 0 2 .9 2 2c0 2.5.4 4.9 1.14 7.14c.22.7.06 1.48-.5 2.04z'/%3E%3C/svg%3E");
+    background-color: #06314b;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+}
+
+.email-icon {
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M21 12.13c-.15.01-.29.06-.39.17l-1 1l2.05 2l1-1c.22-.21.22-.56 0-.77l-1.24-1.23a.56.56 0 0 0-.38-.17m-2 1.75L13 19.94V22h2.06l6.06-6.07M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h7v-.89l8.24-8.22c.47-.49 1.12-.76 1.8-.76c.34 0 .68.06 1 .19V6c0-1.12-.92-2-2.04-2m0 4l-8 5l-8-5V6l8 5l8-5'/%3E%3C/svg%3E");
+    background-color: #06314b;
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+  }
+
+.funcionario-card{
+    /* background-color: #ffffff7d; */
+    /* background-color:  #77d8ff9f; */
+    background-color: #f4ebcf62;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 18rem;
+    height: 30rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    box-shadow:#ffffffa8 0px 6px 20px;
+}
+
+.funcionario-card:hover{
+   scale: 1.05;
+   transition: all 0.6s ease-in-out;
+   background-color: #2ebbf396;
+}
+
+.funcionario-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    justify-content: space-evenly;
+}
+
+.img-funcionario{
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+}
+.img-fun-contenedor{
+    justify-content: center;
+    align-items: center;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.phone-concatenar, .email-concatenar{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin: 5px 0px 5px 0px;
+}
+
+.Anexo-father{
+    display: flex;
+    gap: 5px;
+}
+
+h3{
+    font-size: 19px;
+    font-weight: bold;
+    color: #115884;
+    margin: 0px;
+    padding: 0px 10px 0px 0px;
+}
+
+p{
+    font-size: 15px;
+    color: #00223E;
+    padding: 0px;
+    margin: 20px 0px 10px 0px;
+}
+
+a, .anexo{
+    color: #06314b;
+    margin: 10px 0px 10px 0px;
+}
+
+.anexo {
+    margin: 15px 0px 0px 0px;
+}
+
+
+/**/
+
+.hidden {
+    display: none !important;
+}
+
+.funcionario-container.active {
+    display: flex; /* Mostrar solo la página activa */
+}
+
+.resultado-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 1rem 2rem 1rem;
+    justify-content: space-evenly;
+}
+
+.windows {
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;   
+    display: flex;
+    gap: 2rem;
+}
+
+.pag-button {
+    /* background-color: #2ebbf3b3; */
+    background-color: #f2f2f2;
+    color: #c99d58;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 30px;
+    text-decoration: underline;
+    
+}
+
+.pag-button:hover {
+    background-color:#efdb9eb0;
+}
+
+.pag-button.active {
+    background-color: #f2f2f2;
+    color: #2ebbf3b3;
+}
+
+.pag-button-ocultar {
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
