@@ -105,11 +105,18 @@
     animation-duration: 1.5s;
 }
 
-p, li{
+p{
     font-size: 15px;
     color: #115884;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0px 0px 10px 0px;
+}
+
+.valor, .valor-one, .valor-two, .valor-three{
+    font-size: 15px;
+    color: #115884;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 15px 0px;
 }
 
 ul li::marker {
@@ -320,6 +327,13 @@ ul li::marker {
     font-weight: bold;
    font-style: oblique;
     color: #06314b;
+}
+
+.ud-eco, .ud-log, .ud-ig-h-s, .ud-seg, .ud-ADeI, .ser-AyOU, .ser-RC, .ser-AA, .ser-H-CQ, .ser-E, .ser-CC, .ser-AyCQ, .ser-ADyBS, .ser-AT{
+    font-size: 15px;
+    color: #115884;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px 0px 15px 0px;
 }
 
 
