@@ -1,0 +1,42 @@
+
+h2{
+    font-size: 30px;
+    font-weight: bold;
+    color: #c99d58;
+    font-family: Arial, Helvetica, sans-serif;
+    margin:0px;
+    animation:zoomIn 1.5s;
+    margin: 1rem;
+}
+
+.contenedor-campañas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 2rem;
+    justify-content: space-evenly;
+}
+
+.img-one{
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/eventos/campaign_Integridad_HEVES.png);
+}
+
+.img-two{
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/eventos/campaign_web-01.png);
+}
+
+.img-three{
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/eventos/campaign_Control_interno-01.png);
+}
+
+.img-four{
+    width: 100%;
+    height: 20rem;
+    background-image: url(../img/eventos/campaign_CONOCIENDO_AL_SIS.png);
+}
