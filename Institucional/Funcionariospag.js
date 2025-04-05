@@ -76,4 +76,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Escuchar cambios en el campo de búsqueda
     searchInput.addEventListener("input", searchAllPages);
+
+    //Funcionarios-card al dar click
+        const funcionariosCard = document.querySelectorAll('.funcionario-card');
+        
+        funcionariosCard.forEach(funcionario => {
+            funcionario.addEventListener('click', function() {
+                // Cierra todos los demás divs primero
+                funcionariosCard.forEach(otherFuncionario => {
+                    if (otherFuncionario !== this) {
+                        otherFuncionario.classList.remove('seleccionar');
+                    }
+                });
+                // Abre/cierra al clickear
+                this.classList.toggle('seleccionar');
+            });
+        });
 });

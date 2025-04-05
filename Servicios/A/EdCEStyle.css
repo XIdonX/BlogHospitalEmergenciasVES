@@ -124,7 +124,7 @@ body{
     border-radius: 5px;
     background-color:#77d7ff;
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 1s;
     interpolate-size: allow-keywords;
 }
 
@@ -134,6 +134,23 @@ body{
 .veintitres:hover, .veinticuatro:hover, .veinticinco:hover, .veintiseis:hover, .veintisiete:hover,
 .veintiocho:hover, .veintinueve:hover, .treinta:hover, .treintauno:hover, .treintados:hover,
 .treintatres:hover, .treintacuatro:hover{
+    height: 12rem;
+    background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.7),rgb(47, 197, 255,0.7),rgb(0, 139, 208,0.9)), url(../../img/oso.png);
+    background-size: cover;
+    background-position: center;
+    color: #00223E;
+}
+
+.uno.abierto, .dos.abierto, .tres.abierto, .cuatro.abierto, 
+.cinco.abierto, .seis.abierto, .siete.abierto, .ocho.abierto,
+.nueve.abierto, .diez.abierto, .once.abierto, .doce.abierto, 
+.trece.abierto, .catorce.abierto, .quince.abierto, .dieciseis.abierto,
+.diecisiete.abierto, .dieciocho.abierto, .diecinueve.abierto, 
+.veinte.abierto, .veintiuno.abierto, .veintidos.abierto,
+.veintitres.abierto, .veinticuatro.abierto, .veinticinco.abierto, 
+.veintiseis.abierto, .veintisiete.abierto, .veintiocho.abierto, 
+.veintinueve.abierto, .treinta.abierto, .treintauno.abierto, 
+.treintados.abierto, .treintatres.abierto, .treintacuatro.abierto {
     height: 12rem;
     background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.7),rgb(47, 197, 255,0.7),rgb(0, 139, 208,0.9)), url(../../img/oso.png);
     background-size: cover;

@@ -118,7 +118,7 @@
     border-radius: 5px;
     background-color:#F5DFFE;
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 1s;
     interpolate-size: allow-keywords;
 }
 
@@ -141,6 +141,26 @@
 
 .dos:hover{
     height: 17rem;
+}
+
+.uno.abierto{
+    height: 14rem;
+    background-image: linear-gradient(to bottom, rgb(245, 223, 254,0.6),rgb(205, 142, 228,0.7),rgb(194, 132, 217,0.6)), url(../../img/osoconniño.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: #884C9D 0px 0px 5px;
+    transition: 1s;
+}
+
+.dos.abierto{
+    height: 17rem;
+    background-image: linear-gradient(to bottom, rgb(245, 223, 254,0.6),rgb(205, 142, 228,0.7),rgb(194, 132, 217,0.6)), url(../../img/osoconniño.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-shadow: #884C9D 0px 0px 5px;
+    transition: 1s;
 }
 
 .descripcion{

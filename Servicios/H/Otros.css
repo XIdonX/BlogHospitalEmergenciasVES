@@ -103,11 +103,19 @@
     border-radius: 5px;
     background-color:#77d7ff;
     overflow: hidden;
-    transition: height 0.5s;
+    transition: height 1s;
     interpolate-size: allow-keywords;
 }
 
 .uno:hover, .dos:hover, .tres:hover, .cuatro:hover{
+    height: 12.5rem;
+    background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.7),rgb(47, 197, 255,0.7),rgb(0, 139, 208,0.9)), url(../../img/oso.png);
+    background-size: cover;
+    background-position: center;
+    color: #00223E;
+}
+
+.uno.abierto, .dos.abierto, .tres.abierto, .cuatro.abierto{
     height: 12.5rem;
     background-image: linear-gradient(to bottom, rgb(119, 215, 255,0.7),rgb(47, 197, 255,0.7),rgb(0, 139, 208,0.9)), url(../../img/oso.png);
     background-size: cover;
