@@ -1,11 +1,11 @@
 /*colores*/
 .colores{
     /* background-color: #e8cca0;
-    background-color: #efcf8ecd;
-    background-color: #f5e6b9c6; */
-    color: #77d8ff9f
-    /*color:#00223E
-    color:#06314b*/
+    background-color: #efcf8ecd;*/
+    background-color: #f5e6b9c6; 
+    /* color: #77d8ff9f */
+    /* color:#00223E;
+    color:#06314b; */
 }
 
 .pag-campaña{
@@ -33,7 +33,15 @@ h2{
     border-radius: 5px;
     /* margin: 1rem; */
     font-family: Arial, Helvetica, sans-serif;
+    animation:zoomIn 1.5s;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #4d738b;
 }
+.campaña:hover{
+    scale: 1.08;
+    transition: 0.5s;
+}
+
 .info-campaña{
     display: flex;
     flex-direction: column;
@@ -48,14 +56,14 @@ h2{
     font-weight: bold;
 }
 .info-campaña p{
-    color: #094e78;
-    font-size: 15px;
+    color: #00223E;
+    font-size: 14px;
     text-align: start;
 }
 .redireccion{
     color: #238ab3;
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 16px;
 }
 .tiempo{
     color: #4d738b;
@@ -69,6 +77,7 @@ h2{
     background-image: url(../img/eventos/campaign_Integridad_HEVES.png);
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 }
 .img-two{
     width: 100%;
@@ -76,6 +85,7 @@ h2{
     background-image: url(../img/eventos/campaign_web-01.png);
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 }
 .img-three{
     width: 100%;
@@ -83,6 +93,7 @@ h2{
     background-image: url(../img/eventos/campaign_Control_interno-01.png);
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 }
 .img-four{
     width: 100%;
@@ -90,6 +101,7 @@ h2{
     background-image: url(../img/eventos/campaign_CONOCIENDO_AL_SIS.png);
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 }
 
 @media (max-width: 768px) {
@@ -115,4 +127,73 @@ h2{
         text-align: center;
         margin: 0.5rem 0.2rem 2rem 0.2rem;
     }
+}
+
+/*noticias*/
+
+.titulo-noticias{
+    font-size: 30px;
+    font-weight: bold;
+    color: #c99d58;
+    font-family: Arial, Helvetica, sans-serif;
+    animation:zoomIn 1.5s;
+    margin: 2rem 0.5rem 2rem 1rem;
+}
+
+.titulo-nd{
+    color: #094e78;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    animation:zoomIn 1.5s;
+    margin: 0.5rem 0.5rem 2rem 1rem;
+    border-bottom: solid 1px #094e78;
+    width: 200px;
+    padding-bottom: 5px;
+}
+
+.img-dest{
+    width: 400px;
+    height: 220px;
+    background-image: url(../img/Noticias/noticia-destacada.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.noticia-destacada-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 1rem;
+    padding: 0rem;
+    width: 400px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    animation:zoomIn 1.6s;
+    background-color: #ffffff95;
+    border-radius: 5px;
+    box-shadow: 0 0 2px #4d738b;
+}
+.noticia{
+    margin: 1rem;
+    padding: 0rem;
+    width: auto;
+    height: auto;
+}
+.noticia p{
+    color: #00223E;
+    font-size: 14px;
+}
+.titulo-not{
+    color: #c99d58;
+    font-size: 19px;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px;
+}
+.tiempo-not{
+    color: #4d738b;
+    font-size: 12px;
+    padding: 10px 0px 5px 0px;
+    opacity: 0.7;
 }
