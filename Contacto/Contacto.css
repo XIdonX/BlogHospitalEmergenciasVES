@@ -516,7 +516,8 @@ a:hover{
 .linkedin-red:hover, .youtube-red:hover, .instagram-red:hover, .tiktok-red:hover, .facebook-red:hover{
     transform: scale(1.2);
     /* background-color: #e8cca0; */
-    background-color: #efcf8ecd;
+    /* background-color: #efcf8ecd; */
+    background-color: #f5e6b9c6;
 }
 
 .linkedin-icon {
