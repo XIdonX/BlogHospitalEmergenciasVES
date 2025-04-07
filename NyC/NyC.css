@@ -11,7 +11,7 @@
 .pag-campaña{
     margin: 2rem 1rem 2rem 1rem;
 }
-h2{
+.titulo-campaña{
     font-size: 30px;
     font-weight: bold;
     color: #c99d58;
@@ -117,13 +117,13 @@ h2{
         width: 100%;
         height: 12rem;
     } 
-    h2{
+    .titulo-campaña{
         margin: 0.5rem 0.5rem 2rem 1rem;
     }
 }
 
 @media (max-width: 501px) {
-    h2{
+    .titulo-campaña{
         text-align: center;
         margin: 0.5rem 0.2rem 2rem 0.2rem;
     }
@@ -144,6 +144,7 @@ h2{
     font-family: Arial, Helvetica, sans-serif;
     animation:zoomIn 1.5s;
     margin: 2rem 0.5rem 0rem 2.5rem;
+    
 }
 
 .titulo-nd, .all-noti{
@@ -206,12 +207,16 @@ h2{
 
 /*secciones de noticias*/
 
-.img-noti, .img-noti-one, .img-noti-two, .img-noti-three, .img-noti-four, .img-noti-five, .img-noti-six, .img-noti-seven, .img-noti-eight, .img-noti-nine, .img-noti-ten, .img-noti-eleven{
+.img-noti, .img-noti-one, .img-noti-two, .img-noti-three, .img-noti-four, .img-noti-five,
+.img-noti-six, .img-noti-seven, .img-noti-eight, .img-noti-nine, .img-noti-ten,
+.img-noti-eleven, .img-noti-twelve, .img-noti-thirteen, .img-noti-fourteen, .img-noti-fifteen,
+.img-noti-sixteen, .img-noti-seventeen, .img-noti-eighteen, .img-noti-nineteen{
     width: 100%;
     height: 10rem;
     background-image: url(../img/Noticias/noticia-destacada.jpg);
     background-size: cover;
     background-position: center;
+    border-radius: 5px;
 }
 
 .img-noti-one{
@@ -247,6 +252,30 @@ h2{
 .img-noti-eleven{
     background-image: url(../img/Noticias/12.jpeg);
 }
+.img-noti-twelve{
+    background-image: url(../img/Noticias/13.jpg);
+}
+.img-noti-thirteen{
+    background-image: url(../img/Noticias/14.jpeg);
+}
+.img-noti-fourteen{
+    background-image: url(../img/Noticias/15.jpeg);
+}
+.img-noti-fifteen{
+    background-image: url(../img/Noticias/16.jpeg);
+}
+.img-noti-sixteen{
+    background-image: url(../img/Noticias/17.jpeg);
+}
+.img-noti-seventeen{
+    background-image: url(../img/Noticias/18.jpeg);
+}
+.img-noti-eighteen{
+    background-image: url(../img/Noticias/19.jpeg);
+}
+.img-noti-nineteen{
+    background-image: url(../img/Noticias/20.jpg);
+}
 
 .noticias-container{
     display: flex;
@@ -261,7 +290,7 @@ h2{
     width: 20em;
     height: auto;
     font-family: Arial, Helvetica, sans-serif;
-    animation:zoomIn 1.6s;
+    animation:zoomIn 1.3s;
     background-color: #ffffff95;
     border-radius: 5px;
     box-shadow: 0 0 2px #4d738b;
@@ -287,4 +316,97 @@ h2{
     padding: 15px 0px 0px 0px;
     margin: 0px;
     opacity: 0.7;
+}
+
+
+.noticias-container.active {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content:center;
+}
+
+.hidden {
+    display: none !important; /* Asegura que los elementos con esta clase estén ocultos */
+}
+
+/*botones de paginas*/
+
+.pag-contenedor {
+    justify-content: center;
+    align-items: center;
+    margin:0rem;   
+    display: flex;
+    gap: 2rem;
+}
+.pag-button {
+    /* background-color: #2ebbf3b3; */
+    background-color: #f2f2f2;
+    color: #c99d58;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 17px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: underline;
+}
+.pag-button:hover {
+    background-color:#efdb9eb0;
+}
+
+.pag-button.active {
+    background-color: #f2f2f2;
+    color: #2ebbf3b3;
+}
+.pag-button-ocultar {
+    background-color: #f2f2f2;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 503px) {
+    .pag-noticias-container{
+        margin: 1rem 0rem 2rem 0rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titulo-noticias{
+        margin: 1rem;
+        text-align: center;
+    }
+    
+    .titulo-nd, .all-noti{
+        color: #094e78;
+        text-decoration: underline;
+        font-size: 22px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        animation:zoomIn 1.5s;
+        margin: 1.5rem 1rem 1.5rem 2rem;
+    }
+    
+    .img-dest{
+        width: 100%;
+        height: 200px;
+    }
+    
+    .noticia-destacada-container{
+        margin: 1.5rem 1rem 0rem 1.9rem;
+        padding: 0rem;
+        width: 19em;
+        height: auto;
+    }
+
+    .noticia{
+        margin: 1rem 1rem 0rem 1rem;
+    }
+
+    .noticias-father{
+        margin: 0.5rem 2rem 1.5rem 2rem;
+        padding: 0rem;
+        width: 100%;
+        height: auto;
+    }
 }

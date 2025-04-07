@@ -322,7 +322,7 @@ header{
     margin: 0px;
 
     animation: zoomIn;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 .parrafo{
@@ -335,7 +335,7 @@ header{
     justify-content: center;
 
     animation: slideInRight;
-    animation-duration: 1.5s;
+    animation-duration: 2s;
 }
 
 .seccion{
@@ -350,7 +350,7 @@ header{
 .Nuespeci{
     margin: 0px;
     animation: zoomIn;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
 }
 
 @media (max-width: 768px) {
@@ -430,6 +430,7 @@ header{
     /* box-shadow: 0 0 8px #cdb557; */
     background-color:#efe7cb;
     padding: 15px;
+    animation: zoomIn 3s;
 }
 
 .seccion1 {

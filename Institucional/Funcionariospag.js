@@ -1,95 +1,105 @@
 
-document.addEventListener("DOMContentLoaded", function () {
-    const searchInput = document.getElementById("searchInput");
-    const pagButtons = document.querySelectorAll(".pag-button");
-    const funcionarioContainers = document.querySelectorAll(".funcionario-container");
-    const resultadoContainer = document.querySelector("#resultado .resultado-container");
-    const resultsTabButton = document.querySelector('.pag-button-ocultar');
-    const resultsTab = document.getElementById("resultado");
+document.addEventListener("DOMContentLoaded", function() {
+    
+    //Selecciona todos los elementos que necesitamos
+    const buscador = document.getElementById("searchInput");
+    const botonesPaginas = document.querySelectorAll(".pag-button");
+    const contenedoresFuncionarios = document.querySelectorAll(".funcionario-container");
+    const contenedorResultados = document.querySelector("#resultado .resultado-container");
+    const botonResultados = document.querySelector('.pag-button-ocultar');
+    const pestañaResultados = document.getElementById("resultado");
+    const tarjetasFuncionarios = document.querySelectorAll('.funcionario-card');
 
-    // Función para cambiar de página
-    function changePage(pageId) {
-        funcionarioContainers.forEach((container) => container.classList.add("hidden"));
-        document.getElementById(pageId).classList.remove("hidden");
-
-        pagButtons.forEach((button) => button.classList.remove("active"));
-        document.querySelector(`.pag-button[data-pag="${pageId}"]`).classList.add("active");
+    //Función para cambiar de página
+    function cambiarPagina(idPagina) {
+        // Oculta todos los contenedores
+        contenedoresFuncionarios.forEach(function(contenedor) {
+            contenedor.classList.add("hidden");
+        });
+        
+        // Muestra solo el contenedor que queremos
+        document.getElementById(idPagina).classList.remove("hidden");
+        
+        // Quita el activo de todos los botones
+        botonesPaginas.forEach(function(boton) {
+            boton.classList.remove("active");
+        });
+        
+        // Marca como activo el botón de la página actual
+        document.querySelector(`.pag-button[data-pag="${idPagina}"]`).classList.add("active");
     }
 
-    // Escuchar clics en los botones de página
-    pagButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            if (!button.classList.contains("hidden")) {
-                changePage(button.getAttribute("data-pag"));
+    //Añade eventos a los botones de página
+    botonesPaginas.forEach(function(boton) {
+        boton.addEventListener("click", function() {
+            if (!boton.classList.contains("hidden")) {
+                cambiarPagina(boton.getAttribute("data-pag"));
             }
         });
     });
 
-    // Función para buscar en todas las páginas
-    function searchAllPages() {
-        const searchTerm = searchInput.value.toLowerCase();
-        resultadoContainer.innerHTML = ""; // Limpiar resultados previos
-
-        // Si el campo de búsqueda está vacío, mostrar la página 1
-        if (!searchTerm.trim()) {
-            resultsTabButton.classList.add("hidden");
-            resultsTab.classList.add("hidden");
-            changePage("pag1"); // Cambiar automáticamente a la página 1
+    //Función para buscar funcionarios
+    function buscarFuncionarios() {
+        const textoBusqueda = buscador.value.toLowerCase();
+        contenedorResultados.innerHTML = ""; // Limpiamos resultados anteriores
+        
+        // Si no hay texto de búsqueda, muestra la página 1
+        if (!textoBusqueda.trim()) {
+            botonResultados.classList.add("hidden");
+            pestañaResultados.classList.add("hidden");
+            cambiarPagina("pag1");
             return;
         }
-
-        let hasResults = false;
-
-        // Usar un Set para evitar duplicados
-        const uniqueResults = new Set();
-
-        funcionarioContainers.forEach((container) => {
-            const items = container.querySelectorAll(".funcionario-card");
-
-            items.forEach((item) => {
-                const name = item.querySelector("h3").textContent.toLowerCase();
-                const position = item.querySelector("p").textContent.toLowerCase();
-
-                if (name.includes(searchTerm) || position.includes(searchTerm)) {
-                    const itemId = item.querySelector("p").textContent; // Identificador único basado en el nombre
-                    if (!uniqueResults.has(itemId)) {
-                        uniqueResults.add(itemId);
-                        const clonedItem = item.cloneNode(true); // Clonar el elemento encontrado
-                        resultadoContainer.appendChild(clonedItem);
-                        hasResults = true;
+        
+        let encontramosResultados = false;
+        const resultadosUnicos = new Set(); // Para evitar duplicados
+        
+        // Busca en todos los contenedores
+        contenedoresFuncionarios.forEach(function(contenedor) {
+            const tarjetas = contenedor.querySelectorAll(".funcionario-card");
+            
+            tarjetas.forEach(function(tarjeta) {
+                const nombre = tarjeta.querySelector("h3").textContent.toLowerCase();
+                const puesto = tarjeta.querySelector("p").textContent.toLowerCase();
+                
+                if (nombre.includes(textoBusqueda) || puesto.includes(textoBusqueda)) {
+                    const idUnico = tarjeta.querySelector("p").textContent;
+                    if (!resultadosUnicos.has(idUnico)) {
+                        resultadosUnicos.add(idUnico);
+                        const tarjetaClonada = tarjeta.cloneNode(true);
+                        contenedorResultados.appendChild(tarjetaClonada);
+                        encontramosResultados = true;
                     }
                 }
             });
         });
-
-        // Mostrar u ocultar la pestaña de resultados
-        if (hasResults) {
-            resultsTabButton.classList.remove("hidden");
-            resultsTab.classList.remove("hidden");
-            changePage("resultado"); // Cambiar automáticamente a la pestaña de resultados
+        
+        // Muestra u oculta los resultados
+        if (encontramosResultados) {
+            botonResultados.classList.remove("hidden");
+            pestañaResultados.classList.remove("hidden");
+            cambiarPagina("resultado");
         } else {
-            resultsTabButton.classList.add("hidden");
-            resultsTab.classList.add("hidden");
-            resultadoContainer.innerHTML = "<p class='no-results'>No se encontraron resultados.</p>";
+            botonResultados.classList.add("hidden");
+            pestañaResultados.classList.add("hidden");
+            contenedorResultados.innerHTML = "<p class='no-results'>No se encontraron resultados.</p>";
         }
     }
 
-    // Escuchar cambios en el campo de búsqueda
-    searchInput.addEventListener("input", searchAllPages);
+    //Evento para el buscador
+    buscador.addEventListener("input", buscarFuncionarios);
 
-    //Funcionarios-card al dar click
-        const funcionariosCard = document.querySelectorAll('.funcionario-card');
-        
-        funcionariosCard.forEach(funcionario => {
-            funcionario.addEventListener('click', function() {
-                // Cierra todos los demás divs primero
-                funcionariosCard.forEach(otherFuncionario => {
-                    if (otherFuncionario !== this) {
-                        otherFuncionario.classList.remove('seleccionar');
-                    }
-                });
-                // Abre/cierra al clickear
-                this.classList.toggle('seleccionar');
+    //Eventos para las tarjetas de funcionarios
+    tarjetasFuncionarios.forEach(function(tarjeta) {
+        tarjeta.addEventListener('click', function() {
+            // Cierra todas las demás tarjetas
+            tarjetasFuncionarios.forEach(function(otraTarjeta) {
+                if (otraTarjeta !== tarjeta) {
+                    otraTarjeta.classList.remove('seleccionar');
+                }
             });
+            // Abre/cierra la tarjeta clickeada
+            tarjeta.classList.toggle('seleccionar');
         });
+    });
 });
