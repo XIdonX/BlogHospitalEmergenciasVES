@@ -431,6 +431,7 @@ header{
     background-color:#efe7cb;
     padding: 15px;
     animation: zoomIn 3s;
+    opacity: 0.9;
 }
 
 .seccion1 {
